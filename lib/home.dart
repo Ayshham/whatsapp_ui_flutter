@@ -13,7 +13,7 @@ class home extends StatefulWidget {
 
 class _homeState extends State<home> {
   int index = 0;
-  List<Widget> pages = [chat(),calls(),updates(),communities()];
+  List<Widget> pages = [chat(),updates(),communities(),calls()];
 
   @override
   Widget build(BuildContext context) {
@@ -35,26 +35,8 @@ class _homeState extends State<home> {
           BottomNavigationBarItem(icon: Icon(Icons.call), label: "calls"),
         ],
       ),
-      appBar: AppBar(
-        centerTitle: false,
-        leading: Icon(Icons.camera),
-        backgroundColor: Colors.teal,
-        foregroundColor: Colors.green,
-        title: Text('WhatsApp'),
-        actions: [
-          Icon(Icons.qr_code_scanner),
-          SizedBox(width: 18),
-          Icon(Icons.photo_camera),
-          SizedBox(width: 18),
-          Icon(Icons.more_vert),
-        ],
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Icon(Icons.chat),
-        foregroundColor: Colors.white,
-        backgroundColor: Colors.teal,
-      ),
+
+
     );
   }
 }
